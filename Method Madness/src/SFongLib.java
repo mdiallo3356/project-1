@@ -8,7 +8,7 @@ public class SFongLib
 		System.out.println(cutOut("Hello" , "Hi"));
 		System.out.println(isPalindrome("racecar"));
 	}
-	public static String quadraticSolver(double a, double b, double c)
+	public static String quadraticSolver(double a, double b, double c) //mine
 	{
 		double x1;
 		x1 = (-b + Math.sqrt((b*b)-4*a*c)) / (2*a);
@@ -17,7 +17,7 @@ public class SFongLib
 		String ans = "The roots of " + a + "x^2 + " + b + "x + " + c + " = 0, " + "are " + x1 + ", " + x2 + ".";
 		return ans;
 	}
-	public static int sumUpTo(int x)
+	public static int sumUpTo(int x) //mine
 	{
 		//return (x*(x + 1)) / 2 ;
 		int sum;
@@ -31,7 +31,7 @@ public class SFongLib
 		}
 		return sum;
 	}
-	public static String cutOut(String mainStr, String subStr)
+	public static String cutOut(String mainStr, String subStr) //mine
 	{
 		if(mainStr.length() > 1)
 		{
@@ -42,7 +42,7 @@ public class SFongLib
 			return subStr.substring(0,1);
 		}
 	}
-	public static boolean isPalindrome(String str)
+	public static boolean isPalindrome(String str) //extra
 	{
 		for(int x = 0; x < str.length() - 1; x++)
 		{
