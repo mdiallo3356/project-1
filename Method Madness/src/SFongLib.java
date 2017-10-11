@@ -1,14 +1,15 @@
 
 public class SFongLib 
 {
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		System.out.println(quadraticSolver(1,4,4));
 		System.out.println(sumUpTo(100));
 		System.out.println(cutOut("Hello" , "Hi"));
 		System.out.println(isPalindrome("racecar"));
-		System.out.println(isFibonacci(6));
-	}
+		System.out.println(isFibonacci(6765));
+		System.out.println(Palindrome("racecar"));
+	}*/
 	public static String quadraticSolver(double a, double b, double c) //mine
 	{
 		double x1;
@@ -70,19 +71,32 @@ public class SFongLib
 		}
 		return false;
 	}
-	public static int isFibonacci(int num)
+	public static boolean isFibonacci(int x) // extra
 	{
-		int F0 = 0;
-		int F1 = 1;
-		int F2;
-		int result = 0;
-		if(num > 0)
+		double a = Math.sqrt((5*x*x) + 4);
+		double b = Math.sqrt((5*x*x) - 4);
+		if(a == Math.floor(a) || b == Math.floor(b))
 		{
-			F2 = F1 + F0;
-			F0 = F1;
-			F1 = F2;
-			result = F2 + isFibonacci(num - 1);
+			return true;
 		}
-		return result;
+		else
+		{
+			return false;
+		}
+	}
+	public static boolean Palindrome(String word) // extra
+	{
+		int L = word.length();
+		String reverse = "";
+		for(int x = L - 1; x > -1; x--)
+		{
+			reverse = reverse + word.charAt(x);
+			System.out.println(reverse);
+			if(reverse.equals(word))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }
