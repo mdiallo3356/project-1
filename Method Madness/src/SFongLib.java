@@ -84,19 +84,4 @@ public class SFongLib
 			return false;
 		}
 	}
-	public static boolean Palindrome(String word) // extra
-	{
-		int L = word.length();
-		String reverse = "";
-		for(int x = L - 1; x > -1; x--)
-		{
-			reverse = reverse + word.charAt(x);
-			System.out.println(reverse);
-			if(reverse.equals(word))
-			{
-				return true;
-			}
-		}
-		return false;
-	}
 }
