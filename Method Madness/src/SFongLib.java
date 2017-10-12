@@ -1,12 +1,6 @@
 
 public class SFongLib 
 {
-	/*public static void main(String[] args)
-	{
-		System.out.println(quadraticSolver(1,4,4));
-		System.out.println(sumUpTo(100));
-		System.out.println(cutOut("Hello" , "Hi"));
-	}*/
 	public static String quadraticSolver(double a, double b, double c) //mine
 	{
 		double x1;
