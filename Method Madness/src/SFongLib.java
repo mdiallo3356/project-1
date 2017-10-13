@@ -42,13 +42,14 @@ public class SFongLib
 	}
 	public static String cutOut(String mainStr, String subStr) //mine
 	{
-		if(mainStr.length() > 1)
+		String a = "subStr does not exist within mainstr";
+		for(int i = 0; i <= mainStr.length(); i++)
 		{
-			return subStr.substring(0,1) + mainStr.substring(1);
+			if(mainStr.substring(i, subStr.length() + i).equals(subStr))
+			{
+				return subStr + mainStr.substring(0,i) + mainStr.substring(subStr.length() + i);
+			}
 		}
-		else // for empty input of mainStr
-		{
-			return subStr.substring(0,1);
-		}
+		return a;
 	}
 }
