@@ -45,9 +45,9 @@ public class SFongLib
 		String a = "subStr does not exist within mainstr";
 		for(int i = 0; i <= mainStr.length(); i++)
 		{
-			if(mainStr.substring(i, subStr.length() + i).equals(subStr))
+			if(mainStr.substring(i, subStr.length() + i).equals(subStr)) //finds where the cut out exists within mainStr
 			{
-				return subStr + mainStr.substring(0,i) + mainStr.substring(subStr.length() + i);
+				return subStr + mainStr.substring(0,i) + mainStr.substring(subStr.length() + i); //returns the part of main that is not cut out with the cutout attachted in the front
 			}
 		}
 		return a;
