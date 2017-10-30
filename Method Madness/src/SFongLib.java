@@ -1,7 +1,7 @@
 
 public class SFongLib 
 {
-	public static String quadraticSolver(double a, double b, double c) //mine
+	public static String quadraticSolver(double a, double b, double c) //mine mine mine
 	{
 		double x1;
 		double x2;
